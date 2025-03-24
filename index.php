@@ -16,11 +16,15 @@ $data = ambildata($query);
 <body>
     <h1>DATA MAHASISWA<h1>
     <br>
+    <a href="tambahmahsiswa.php">tambah</a>
     <table border="1" cellspacing="0" cellpadding="5">
         <thead>
             <th>No</th>
             <th>Nim</th>
             <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>No Telp</th>
+            <th>Email </th>
         </thead>
         <tbody>
 
@@ -31,7 +35,7 @@ $data = ambildata($query);
                 <td><?php echo $i++; ?></td>
                 <td><?php echo $d["Nim"] ?></td>
                 <td><?php echo $d["Nama"] ?></td>
-                <td><?php echo $d["Tanggal lahir"] ?></td>
+                <td><?php echo $d["Tanggallahir"] ?></td>
                 <td><?php echo $d["Telp"] ?></td>
                 <td><?php echo $d["Email"] ?></td>
             </tr>
